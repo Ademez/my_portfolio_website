@@ -216,6 +216,70 @@ nav .bx-menu {
   color: var(--primary_gray);
 }
 
+/* Project Section */
+
+.project_section {
+  background: var(--mid_dark_gray);
+  padding: 8rem 6rem;
+  /* height: 150vh; */
+}
+
+.recent_work {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.project_section .recent_work h2 {
+  color: var(--primary_green) ;
+}
+
+.project_section .heading_container h1 {
+  font-size: 3rem;
+  width: 50%;
+}
+
+.heading_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project_section button {
+  border: 1px solid var(--primary_green);
+  padding: 14px 28px;
+  transition: 0.2s all ease-in-out;
+  height: 3rem;
+}
+
+.project_section .card_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 10rem;
+  margin-top: 4rem;
+  
+}
+
+.project_section .card_container div{
+  width: 100%;
+  height: 100%;
+}
+
+.project_section .card_container div img {
+  width: 100%;
+  height: 100%;
+}
+
+.project_section .card_container  .project {
+  color: var(--primary_green);
+}
+
+
+/* Project Section */
+
+
+
 /* // from 0 to 900px eveyrhting inside the block will be effected */
 @media (max-width: 900px) {
   body {
@@ -296,7 +360,33 @@ nav .bx-menu {
     font-size: 30px;
     text-align: center;
   }
+
+  .project_section {
+    padding: 25px;
+    
+  }
+  
+  .project_section .recent_work {
+    justify-content: center;
+    }
+
+    .project_section .heading_container {
+      flex-direction: column;
+    }
+
+  .project_section .heading_container h1 {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .project_section .card_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 2rem;
+    margin-top: 4rem;
 }
+
 
 @media (min-width: 901px) and (max-width: 1025px) {
   .dnone {
@@ -325,5 +415,9 @@ nav .bx-menu {
   .services_section h2 {
     font-size: 30px;
     text-align: center;
+  }
+
+  .project_section {
+    width: 100vw;
   }
 }
